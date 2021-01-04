@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       mode:'TEST1',
        
-        
+    
       selected_content_id:2,
       subject:{title:'WEB event TEST', sub:'this is test start'},
       TEST1:{title:'TEST1', desc:'this is test1'},
