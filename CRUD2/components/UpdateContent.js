@@ -23,9 +23,9 @@ class UpdateContent extends Component{
           e.preventDefault();
         alert('test');
         this.props.onSubmit(
-       this.state.id,
+        this.state.id,
         this.state.title,
-        this.state.value
+        this.state.desc
         );
           }.bind(this)}
     >
