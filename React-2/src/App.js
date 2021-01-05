@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
+import Name from './Name';
+import Counter from './Counter';
+
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>안녕하세요 리액트</h1>
+      <div className="App">
+      <Counter />
+      
+      <Name name="김진석" />
       </div>
+      
+  
     );
   }
+  
 }
 
 export default App;
+
+
