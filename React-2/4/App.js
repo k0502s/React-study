@@ -34,6 +34,17 @@ handleRemove = (id) => {
     })
   }
 
+handleUpdate = (id, data) =>{
+    const {information} = this.state;
+    this.setState({
+        information: information.map(info => id === info.id ? { ...info, ...data }// 새 객체를 만들어서 기존의 값과 전달받은 data 을 덮어씀
+        : info
+        )// 기존의 값을 그대로 유지
+        
+    })
+    
+}
+
  render() {
     const { information } = this.state;
     return (
@@ -44,7 +55,9 @@ handleRemove = (id) => {
         
         <PhoneInfoList data={this.state.information}
          onRemove={this.handleRemove}
+         onUpdate={this.handleUpdate}
         />
+        
         
       </div>
     );
